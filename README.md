@@ -1,6 +1,6 @@
 # Installing NDN-SIM and NS-3 in UBUNTU-14.04
 Open a terminal and run these commands to install dependencies:
- ```bash   
+ ```shell   
     sudo apt-get install build-essential libsqlite3-dev libcrypto++-dev
     sudo apt-get install libboost-all-dev
     sudo apt-get install python-dev python-pygraphviz python-kiwi
@@ -12,7 +12,7 @@ Open a terminal and run these commands to install dependencies:
     sudo apt-get install libsqlite3-dev
 ```
 Go to the directory where you want to install 
-```bash
+```shell
     mkdir ndnSIM
     cd ndnSIM
 
@@ -50,13 +50,13 @@ Go to the directory where you want to install
     gedit bindings/python/wscript
 ```
 change line **16** to:
-```bash
+```shell
     REQUIRED_PYBINDGEN_VERSION = '0.17.0.887'
 ```
 **save and exit**
 
 Now run
-```bash
+```shell
     ./waf configure -d debug --enable-example --enable-tests
     ./waf
     sudo ./waf install
