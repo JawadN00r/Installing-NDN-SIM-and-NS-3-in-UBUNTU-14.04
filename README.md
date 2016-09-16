@@ -54,6 +54,7 @@ change line **16** to:
     REQUIRED_PYBINDGEN_VERSION = '0.17.0.887'
 ```
 **save and exit**
+ß
 Now run
 ```bash
     ./waf configure -d debug --enable-example --enable-tests
